@@ -196,8 +196,10 @@ const commonThemeConfig = {
     level: [1, 6]
   },
   footer: {
-    message: '<a href="https://beian.miit.gov.cn/" target="_blank">京ICP备2026002630号-1</a> | <a href="https://beian.mps.gov.cn/#/query/webSearch?code=11010602202215" rel="noreferrer" target="_blank">京公网安备11010602202215号</a>',
-    copyright: '本作品采用 <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议（CC BY-NC-SA 4.0）</a> 进行许可'
+    message:
+      '<a href="https://beian.miit.gov.cn/" target="_blank">京ICP备2026002630号-1</a> | <a href="https://beian.mps.gov.cn/#/query/webSearch?code=11010602202215" rel="noreferrer" target="_blank">京公网安备11010602202215号</a>',
+    copyright:
+      '本作品采用 <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议（CC BY-NC-SA 4.0）</a> 进行许可'
   }
 }
 
@@ -206,51 +208,71 @@ const productManagerSidebar = [
     text: '新手入门',
     collapsed: false,
     items: [
-      { text: '1. 学习地图', link: '/zh-cn/stage-0/0.1-learning-map/' },
+      { text: '学习地图', link: '/zh-cn/stage-0/0.1-learning-map/' },
       {
-        text: '2. AI 时代，会说话就会编程',
+        text: 'AI 时代，会说话就会编程',
         link: '/zh-cn/stage-0/0.2-ai-capabilities-through-games/'
       }
     ]
   },
   {
-    text: '产品经理',
+    text: '产品原型实战',
     collapsed: false,
     items: [
       {
-        text: '1. 认识 AI IDE 工具',
+        text: '学会 AI 编程工具',
         link: '/zh-cn/stage-1/1.1-introduction-to-ai-ide/'
       },
       {
-        text: '2. 动手做出原型',
+        text: '找到好点子',
+        link: '/zh-cn/stage-1/1.0-finding-great-idea/'
+      },
+      {
+        text: '搭建产品原型',
         link: '/zh-cn/stage-1/1.2-building-prototype/'
       },
       {
-        text: '3. 给原型加上 AI 能力',
+        text: '接入 AI 能力',
         link: '/zh-cn/stage-1/1.3-integrating-ai-capabilities/'
       },
       {
-        text: '4. 完整项目实战',
+        text: '完整项目实战',
         link: '/zh-cn/stage-1/1.4-complete-project-practice/'
-      },
+      }
+    ]
+  },
+  {
+    text: '附录：业务思维',
+    collapsed: false,
+    items: [
       {
-        text: '附录 A：产品思维补充',
+        text: '产品思维与方案设计',
         link: '/zh-cn/stage-1/appendix-a-product-thinking/'
       },
       {
-        text: '附录 B：常见报错及解决方案',
-        link: '/zh-cn/stage-1/appendix-b-common-errors/'
-      },
-      {
-        text: '附录 C：产业多分类场景方向参考',
+        text: 'AI 行业应用场景参考 (B端)',
         link: '/zh-cn/stage-1/appendix-industry-scenarios/'
       },
       {
-        text: '扩展阅读 1：7 款主流 Vibe Coding 在线平台实测对比',
+        text: 'AI 消费场景灵感参考 (C端)',
+        link: '/zh-cn/stage-1/appendix-c-consumer-scenarios/'
+      }
+    ]
+  },
+  {
+    text: '附录：技术方案',
+    collapsed: false,
+    items: [
+      {
+        text: '写代码时遇到错误怎么办',
+        link: '/zh-cn/stage-1/appendix-b-common-errors/'
+      },
+      {
+        text: '七款 AI 编程工具对比',
         link: '/zh-cn/stage-1/appendix-articles/example0-1/vibe-coding-tools-snake-game-tutorial'
       },
       {
-        text: '扩展阅读 2：用编程和设计智能体开发网站',
+        text: '用设计和编程 Agent 设计网站',
         link: '/zh-cn/stage-1/appendix-articles/example0-2/vibe-coding-tools-build-website-with-ai-coding-and-design-agents'
       }
     ]
@@ -311,18 +333,18 @@ export default defineConfig({
         nav: [
           { text: '首页', link: '/zh-cn/' },
           {
-            text: '产品经理',
+            text: '零基础入门',
             link: '/zh-cn/stage-0/'
           },
           {
             text: '初中级开发',
-            link: '/zh-cn/stage-2/'
+            link: '/zh-cn/stage-2/intro'
           },
           {
             text: '高级开发',
-            link: '/zh-cn/stage-3/'
+            link: '/zh-cn/stage-3/intro'
           },
-          { text: '附录', link: '/zh-cn/appendix/' }
+          { text: '附录', link: '/zh-cn/appendix/intro' }
         ],
         sidebar: {
           '/zh-cn/stage-0/': productManagerSidebar,
@@ -350,7 +372,7 @@ export default defineConfig({
                 },
                 {
                   text: '前端四：一起做霍格沃茨画像',
-                  link: '/zh-cn/stage-2/frontend/2.4-hogwarts-portraits/chapter4-lets-build-hogwarts-portraits'
+                  link: '/zh-cn/stage-2/frontend/2.4-hogwarts-portraits/'
                 }
               ]
             },
@@ -360,11 +382,11 @@ export default defineConfig({
               items: [
                 {
                   text: '后端一：什么是 API',
-                  link: '/zh-cn/stage-2/backend/2.1-what-is-api/extra2/extra2-what-is-api'
+                  link: '/zh-cn/stage-2/backend/2.1-what-is-api/extra2/'
                 },
                 {
                   text: '后端二：从数据库到 Supabase',
-                  link: '/zh-cn/stage-2/backend/2.2-database-supabase/chapter5/chapter5-from-database-to-supabase'
+                  link: '/zh-cn/stage-2/backend/2.2-database-supabase/chapter5/'
                 },
                 {
                   text: '后端三：大模型辅助编写接口代码与接口文档',
@@ -372,15 +394,15 @@ export default defineConfig({
                 },
                 {
                   text: '后端四：Git 工作流',
-                  link: '/zh-cn/stage-2/backend/2.4-git-workflow/extra1/extra1-what-is-git-and-what-is-github'
+                  link: '/zh-cn/stage-2/backend/2.4-git-workflow/extra1/'
                 },
                 {
-                  text: '后端五：Zeabur 部署',
-                  link: '/zh-cn/stage-2/backend/2.5-zeabur-deployment/extra6/extra6-zeabur-what-is-it-and-how-to-deploy-web-applications'
+                  text: '后端五：如何部署 Web 应用',
+                  link: '/zh-cn/stage-2/backend/2.5-zeabur-deployment/extra6/'
                 },
                 {
                   text: '后端六：现代 CLI 开发工具',
-                  link: '/zh-cn/stage-2/backend/2.6-modern-cli/extra7/extra7-cli-ai-coding-tools-and-the-principles-of-test-driven-development'
+                  link: '/zh-cn/stage-2/backend/2.6-modern-cli/extra7/'
                 },
                 {
                   text: '后端七：如何集成 Stripe 等收费系统',
@@ -408,11 +430,11 @@ export default defineConfig({
               items: [
                 {
                   text: 'AI 一：Dify 入门与知识库集成',
-                  link: '/zh-cn/stage-2/ai-capabilities/2.1-dify-knowledge-base/chapter3/chapter3-getting-started-with-dify-and-its-knowledge-base-integration'
+                  link: '/zh-cn/stage-2/ai-capabilities/2.1-dify-knowledge-base/chapter3/'
                 },
                 {
                   text: 'AI 二：学会查询 AI 词典与集成多模态 API',
-                  link: '/zh-cn/stage-2/ai-capabilities/2.2-multimodal-api/extra3/extra3-ai-capability-starter-handbook'
+                  link: '/zh-cn/stage-2/ai-capabilities/2.2-multimodal-api/extra3/'
                 }
               ]
             }
@@ -470,7 +492,7 @@ export default defineConfig({
               items: [
                 {
                   text: '高级 AI 一：什么是 RAG 以及它如何工作',
-                  link: '/zh-cn/stage-3/ai-advanced/3.a1-rag-introduction/extra5-what-is-rag-and-how-does-it-work-and-future'
+                  link: '/zh-cn/stage-3/ai-advanced/3.a1-rag-introduction/'
                 },
                 {
                   text: '高级 AI 二：中高级 RAG 与工作流编排 - 以 LangGraph 为例',
@@ -491,23 +513,23 @@ export default defineConfig({
               items: [
                 {
                   text: 'Extra 1: Git & GitHub',
-                  link: '/zh-cn/extra/extra1/extra1-what-is-git-and-what-is-github'
+                  link: '/zh-cn/stage-2/backend/2.4-git-workflow/extra1/'
                 },
                 {
                   text: 'Extra 2: What is API',
-                  link: '/zh-cn/extra/extra2/extra2-what-is-api'
+                  link: '/zh-cn/stage-2/backend/2.1-what-is-api/extra2/'
                 },
                 {
                   text: 'Extra 5: What is RAG',
-                  link: '/zh-cn/extra/extra5/extra5-what-is-rag-and-how-does-it-work-and-future'
+                  link: '/zh-cn/stage-3/ai-advanced/3.a1-rag-introduction/'
                 },
                 {
                   text: 'Extra 6: Zeabur Deployment',
-                  link: '/zh-cn/extra/extra6/extra6-zeabur-what-is-it-and-how-to-deploy-web-applications'
+                  link: '/zh-cn/stage-2/backend/2.5-zeabur-deployment/extra6/'
                 },
                 {
                   text: 'Extra 7: CLI AI Tools & TDD',
-                  link: '/zh-cn/extra/extra7/extra7-cli-ai-coding-tools-and-the-principles-of-test-driven-development'
+                  link: '/zh-cn/stage-2/backend/2.6-modern-cli/extra7/'
                 }
               ]
             }
@@ -533,15 +555,15 @@ export default defineConfig({
               items: [
                 {
                   text: '前端四：霍格沃茨画像',
-                  link: '/zh-cn/project/chapter4/chapter4-lets-build-hogwarts-portraits'
+                  link: '/zh-cn/stage-2/frontend/2.4-hogwarts-portraits/'
                 },
                 {
                   text: '后端二：Supabase 数据库',
-                  link: '/zh-cn/project/chapter5/chapter5-from-database-to-supabase'
+                  link: '/zh-cn/stage-2/backend/2.2-database-supabase/chapter5/'
                 },
                 {
                   text: 'AI 一：Dify & Knowledge Base',
-                  link: '/zh-cn/project/chapter3/chapter3-getting-started-with-dify-and-its-knowledge-base-integration'
+                  link: '/zh-cn/stage-2/ai-capabilities/2.1-dify-knowledge-base/chapter3/'
                 }
               ]
             }
@@ -604,6 +626,22 @@ export default defineConfig({
                 {
                   text: '浏览器调试器',
                   link: '/zh-cn/appendix/browser-devtools'
+                },
+                {
+                  text: '浏览器渲染原理',
+                  link: '/zh-cn/appendix/browser-rendering-pipeline'
+                },
+                {
+                  text: '前端路由原理',
+                  link: '/zh-cn/appendix/frontend-routing'
+                },
+                {
+                  text: '组件状态管理',
+                  link: '/zh-cn/appendix/component-state-management'
+                },
+                {
+                  text: '前端工程化',
+                  link: '/zh-cn/appendix/frontend-engineering'
                 }
               ]
             },
@@ -616,15 +654,47 @@ export default defineConfig({
                   link: '/zh-cn/appendix/backend-evolution'
                 },
                 {
+                  text: '后端分层架构',
+                  link: '/zh-cn/appendix/backend-layered-architecture'
+                },
+                {
                   text: '后端编程语言',
                   link: '/zh-cn/appendix/backend-languages'
+                },
+                {
+                  text: '并发编程模型',
+                  link: '/zh-cn/appendix/concurrency-models'
+                },
+                {
+                  text: '接口设计规范',
+                  link: '/zh-cn/appendix/api-design'
                 },
                 { text: '数据库原理', link: '/zh-cn/appendix/database-intro' },
                 { text: '系统缓存设计', link: '/zh-cn/appendix/cache-design' },
                 { text: '消息队列设计', link: '/zh-cn/appendix/queue-design' },
                 { text: '鉴权原理与实战', link: '/zh-cn/appendix/auth-design' },
+                { text: '网关与反向代理', link: '/zh-cn/appendix/gateway-proxy' },
+                { text: '负载均衡策略', link: '/zh-cn/appendix/load-balancing' },
                 { text: '埋点设计', link: '/zh-cn/appendix/tracking-design' },
                 { text: '线上运维', link: '/zh-cn/appendix/operations' }
+              ]
+            },
+            {
+              text: '云计算与服务',
+              collapsed: false,
+              items: [
+                {
+                  text: '云服务基础',
+                  link: '/zh-cn/appendix/cloud-services'
+                },
+                {
+                  text: 'IAM 权限管理',
+                  link: '/zh-cn/appendix/cloud-iam'
+                },
+                {
+                  text: '对象存储与 CDN',
+                  link: '/zh-cn/appendix/cloud-storage-cdn'
+                }
               ]
             },
             {
@@ -643,7 +713,7 @@ export default defineConfig({
               ]
             }
           ]
-        },
+        }
       }
     },
 
@@ -669,21 +739,21 @@ export default defineConfig({
         nav: [
           { text: 'Home', link: '/en-us/' },
           {
-            text: 'Product Manager',
+            text: 'Novice & PM',
             link: '/en-us/stage-0/'
           },
           {
             text: 'Full-Stack Development',
-            link: '/en-us/stage-2/'
+            link: '/en-us/stage-2/intro'
           },
           {
             text: 'Advanced Development',
-            link: '/en-us/stage-3/'
+            link: '/en-us/stage-3/intro'
           },
-          { text: 'Appendix', link: '/en-us/appendix/' }
+          { text: 'Appendix', link: '/en-us/appendix/intro' }
         ],
         // TODO: Add English sidebar when content is ready
-        sidebar: {},
+        sidebar: {}
       }
     },
 
@@ -709,21 +779,21 @@ export default defineConfig({
         nav: [
           { text: 'ホーム', link: '/ja-jp/' },
           {
-            text: 'AI プロダクトマネージャー',
+            text: '初心者とPM',
             link: '/ja-jp/stage-0/'
           },
           {
             text: 'フルスタック開発',
-            link: '/ja-jp/stage-2/'
+            link: '/ja-jp/stage-2/intro'
           },
           {
             text: '上級開発',
-            link: '/ja-jp/stage-3/'
+            link: '/ja-jp/stage-3/intro'
           },
-          { text: '付録', link: '/ja-jp/appendix/' }
+          { text: '付録', link: '/ja-jp/appendix/intro' }
         ],
         // TODO: Add Japanese sidebar when content is ready
-        sidebar: {},
+        sidebar: {}
       }
     },
     'zh-tw': {
@@ -747,20 +817,20 @@ export default defineConfig({
         nav: [
           { text: '首頁', link: '/zh-tw/' },
           {
-            text: '產品經理',
+            text: '新手與產品原型',
             link: '/zh-tw/stage-0/'
           },
           {
             text: '初中級開發',
-            link: '/zh-tw/stage-2/'
+            link: '/zh-tw/stage-2/intro'
           },
           {
             text: '高級開發',
-            link: '/zh-tw/stage-3/'
+            link: '/zh-tw/stage-3/intro'
           },
-          { text: '附錄', link: '/zh-tw/appendix/' }
+          { text: '附錄', link: '/zh-tw/appendix/intro' }
         ],
-        sidebar: {},
+        sidebar: {}
       }
     },
     'ko-kr': {
@@ -783,18 +853,18 @@ export default defineConfig({
         },
         nav: [
           { text: '홈', link: '/ko-kr/' },
-          { text: 'AI PM', link: '/ko-kr/stage-0/' },
+          { text: '초보자 & PM', link: '/ko-kr/stage-0/' },
           {
             text: '풀스택 개발',
-            link: '/ko-kr/stage-2/'
+            link: '/ko-kr/stage-2/intro'
           },
           {
             text: '고급 개발',
-            link: '/ko-kr/stage-3/'
+            link: '/ko-kr/stage-3/intro'
           },
-          { text: '부록', link: '/ko-kr/appendix/' }
+          { text: '부록', link: '/ko-kr/appendix/intro' }
         ],
-        sidebar: {},
+        sidebar: {}
       }
     },
     'es-es': {
@@ -818,20 +888,20 @@ export default defineConfig({
         nav: [
           { text: 'Inicio', link: '/es-es/' },
           {
-            text: 'PM de IA',
+            text: 'Principiante y PM',
             link: '/es-es/stage-0/'
           },
           {
             text: 'Desarrollo Full Stack',
-            link: '/es-es/stage-2/'
+            link: '/es-es/stage-2/intro'
           },
           {
             text: 'Desarrollo Avanzado',
-            link: '/es-es/stage-3/'
+            link: '/es-es/stage-3/intro'
           },
-          { text: 'Apéndice', link: '/es-es/appendix/' }
+          { text: 'Apéndice', link: '/es-es/appendix/intro' }
         ],
-        sidebar: {},
+        sidebar: {}
       }
     },
     'fr-fr': {
@@ -854,18 +924,18 @@ export default defineConfig({
         },
         nav: [
           { text: 'Accueil', link: '/fr-fr/' },
-          { text: 'PM IA', link: '/fr-fr/stage-0/' },
+          { text: 'Débutant & PM', link: '/fr-fr/stage-0/' },
           {
             text: 'Développement Full Stack',
-            link: '/fr-fr/stage-2/'
+            link: '/fr-fr/stage-2/intro'
           },
           {
             text: 'Développement Avancé',
-            link: '/fr-fr/stage-3/'
+            link: '/fr-fr/stage-3/intro'
           },
-          { text: 'Annexe', link: '/fr-fr/appendix/' }
+          { text: 'Annexe', link: '/fr-fr/appendix/intro' }
         ],
-        sidebar: {},
+        sidebar: {}
       }
     },
     'de-de': {
@@ -888,18 +958,18 @@ export default defineConfig({
         },
         nav: [
           { text: 'Start', link: '/de-de/' },
-          { text: 'KI-PM', link: '/de-de/stage-0/' },
+          { text: 'Anfänger & PM', link: '/de-de/stage-0/' },
           {
             text: 'Full Stack Entwicklung',
-            link: '/de-de/stage-2/'
+            link: '/de-de/stage-2/intro'
           },
           {
             text: 'Fortgeschrittene Entwicklung',
-            link: '/de-de/stage-3/'
+            link: '/de-de/stage-3/intro'
           },
-          { text: 'Anhang', link: '/de-de/appendix/' }
+          { text: 'Anhang', link: '/de-de/appendix/intro' }
         ],
-        sidebar: {},
+        sidebar: {}
       }
     },
     'ar-sa': {
@@ -923,20 +993,20 @@ export default defineConfig({
         nav: [
           { text: 'الرئيسية', link: '/ar-sa/' },
           {
-            text: 'مدير منتج AI',
+            text: 'مبتدأ & PM',
             link: '/ar-sa/stage-0/'
           },
           {
             text: 'تطوير Full Stack',
-            link: '/ar-sa/stage-2/'
+            link: '/ar-sa/stage-2/intro'
           },
           {
             text: 'تطوير متقدم',
-            link: '/ar-sa/stage-3/'
+            link: '/ar-sa/stage-3/intro'
           },
-          { text: 'ملحق', link: '/ar-sa/appendix/' }
+          { text: 'ملحق', link: '/ar-sa/appendix/intro' }
         ],
-        sidebar: {},
+        sidebar: {}
       }
     },
     'vi-vn': {
@@ -960,20 +1030,20 @@ export default defineConfig({
         nav: [
           { text: 'Trang chủ', link: '/vi-vn/' },
           {
-            text: 'PM AI',
+            text: 'Người mới & PM',
             link: '/vi-vn/stage-0/'
           },
           {
             text: 'Phát triển Full Stack',
-            link: '/vi-vn/stage-2/'
+            link: '/vi-vn/stage-2/intro'
           },
           {
             text: 'Phát triển Nâng cao',
-            link: '/vi-vn/stage-3/'
+            link: '/vi-vn/stage-3/intro'
           },
-          { text: 'Phụ lục', link: '/vi-vn/appendix/' }
+          { text: 'Phụ lục', link: '/vi-vn/appendix/intro' }
         ],
-        sidebar: {},
+        sidebar: {}
       }
     }
   }

@@ -53,8 +53,7 @@ Quand vous essayez d'écrire du code avec l'IA, vous rencontrez des erreurs cons
 
 Ce tutoriel est spécialement conçu pour vous mener de 0 à 1, maîtrisant progressivement les techniques de Vibe Coding :
 
-- **Étape 0** : **Introduction rapide par des mini-jeux** pour acquérir les compétences de Vibe Coding
-- **Étape 1** : Du point de vue d'un product manager, **compétences de Vibe Coding et compréhension des métiers**, implémentation d'un prototype d'application web
+- **Étape 1** : Des **mini-jeux aux prototypes web**, maîtriser les bases de la programmation IA et la pensée produit
 - **Étape 2** : Apprendre le **développement frontend/backend et les capacités d'IA** liées aux techniques de Vibe Coding, compléter une application complète
 - **Étape 3** : Maîtriser la construction d'**applications complexes multiplateformes**, vers des applications de niveau production
 
@@ -76,29 +75,33 @@ Nous croyons qu'en maîtrisant Vibe Coding et en le combinant avec un entraînem
 
 [Dictionnaire des capacités IA : concepts centraux IA courants, termes et explications de scénarios](docs/zh-cn/appendix/ai-capability-dictionary.md)
 
-### 0. Maternelle
+### 1. Entrée débutant et prototype de produit
 
-| Chapitre                                                                                                                           | Contenu clé                                                                                     | Statut |
-| :--------------------------------------------------------------------------------------------------------------------------------- | :---------------------------------------------------------------------------------------------- | :----- |
-| [Préface : Carte d'apprentissage](docs/zh-cn/stage-0/0.1-learning-map/index.md)                                                    | Guide général du parcours d'apprentissage                                                       | ✅     |
-| [Débutant 1 : L'ère de l'IA, savoir parler c'est savoir programmer](docs/zh-cn/stage-0/0.2-ai-capabilities-through-games/index.md) | Découvrir pour la première fois les capacités de programmation IA à travers des cas comme Snake | ✅     |
+| Chapitre                                                                                                                           | Contenu clé                                                                                                      | Statut |
+| :--------------------------------------------------------------------------------------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------- | :----- |
+| [Préface : Carte d'apprentissage](docs/zh-cn/stage-0/0.1-learning-map/index.md)                                                    | Guide général du parcours d'apprentissage                                                                        | ✅     |
+| [Débutant 1 : L'ère de l'IA, savoir parler c'est savoir programmer](docs/zh-cn/stage-0/0.2-ai-capabilities-through-games/index.md) | Découvrir pour la première fois les capacités de programmation IA à travers des cas comme Snake                  | ✅     |
+| [Débutant 2 : Découvrir les outils IDE IA](docs/zh-cn/stage-1/1.1-introduction-to-ai-ide/index.md)                                 | Apprendre à utiliser l'IDE, créer des mini-jeux localement                                                       | ✅     |
+| [Débutant 3 : Créer un prototype soi-même](docs/zh-cn/stage-1/1.2-building-prototype/index.md)                                     | Analyse des besoins, génération d'une seule page par l'IA, jusqu'à générer des prototypes de produits multipages | ✅     |
+| [Débutant 4 : Ajouter des capacités IA au prototype](docs/zh-cn/stage-1/1.3-integrating-ai-capabilities/index.md)                  | Apprendre à connecter des capacités IA courantes (texte, image, vidéo)                                           | ✅     |
+| [Débutant 5 : Projet complet pratique](docs/zh-cn/stage-1/1.4-complete-project-practice/index.md)                                  | Simuler des scénarios réels, accepter les feedbacks des utilisateurs pour itérer, compléter le projet            | ✅     |
+| [Projet final : Créer un prototype complet d'application web et le présenter](docs/zh-cn/stage-1/1.5-final-project/index.md)       | Implémenter complètement l'application, présenter les effets de l'application                                    | ✅     |
 
-### 1. Product Manager IA
+#### Annexes : Pensée Business
 
-| Chapitre                                                                                                                     | Contenu clé                                                                                                      | Statut |
-| :--------------------------------------------------------------------------------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------- | :----- |
-| [Débutant 2 : Découvrir les outils IDE IA](docs/zh-cn/stage-1/1.1-introduction-to-ai-ide/index.md)                           | Apprendre à utiliser l'IDE, créer des mini-jeux localement                                                       | ✅     |
-| [Débutant 3 : Créer un prototype soi-même](docs/zh-cn/stage-1/1.2-building-prototype/index.md)                               | Analyse des besoins, génération d'une seule page par l'IA, jusqu'à générer des prototypes de produits multipages | ✅     |
-| [Débutant 4 : Ajouter des capacités IA au prototype](docs/zh-cn/stage-1/1.3-integrating-ai-capabilities/index.md)            | Apprendre à connecter des capacités IA courantes (texte, image, vidéo)                                           | ✅     |
-| [Débutant 5 : Projet complet pratique](docs/zh-cn/stage-1/1.4-complete-project-practice/index.md)                            | Simuler des scénarios réels, accepter les feedbacks des utilisateurs pour itérer, compléter le projet            | ✅     |
-| [Projet final : Créer un prototype complet d'application web et le présenter](docs/zh-cn/stage-1/1.5-final-project/index.md) | Implémenter complètement l'application, présenter les effets de l'application                                    | ✅     |
+| Chapitre                                                                                                                               | Contenu clé                                                     | Statut |
+| :------------------------------------------------------------------------------------------------------------------------------------- | :-------------------------------------------------------------- | :----- |
+| [Annexe A : Pensée Produit et Conception de Solution](docs/zh-cn/stage-1/appendix-a-product-thinking/index.md)                         | Cadres de pensée nécessaires pour créer un produit de zéro à un | ✅     |
+| [Annexe B : Référence des Scénarios d'Application AI dans l'Industrie (B2B)](docs/zh-cn/stage-1/appendix-industry-scenarios/index.md)  | Comprendre les applications AI dans différentes industries      | ✅     |
+| [Annexe C : Référence d'Inspiration des Scénarios de Consommation AI (B2C)](docs/zh-cn/stage-1/appendix-c-consumer-scenarios/index.md) | Explorer les applications AI dans les produits grand public     | ✅     |
 
-#### Annexes
+#### Annexes : Solutions Techniques
 
-| Chapitre                                                                                           | Contenu clé                                                     | Statut |
-| :------------------------------------------------------------------------------------------------- | :-------------------------------------------------------------- | :----- |
-| [Annexe A : Complément de pensée produit](docs/zh-cn/stage-1/appendix-a-product-thinking/index.md) | Cadres de pensée nécessaires pour créer un produit de zéro à un | ✅     |
-| [Annexe B : Erreurs courantes et solutions](docs/zh-cn/stage-1/appendix-b-common-errors/index.md)  | Erreurs courantes en Vibe Coding et méthodes de dépannage       | ✅     |
+| Chapitre                                                                                                                                                                                                | Contenu clé                                                        | Statut |
+| :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | :----------------------------------------------------------------- | :----- |
+| [Annexe D : Que Faire en Cas d'Erreur lors de l'Écriture de Code](docs/zh-cn/stage-1/appendix-b-common-errors/index.md)                                                                                 | Erreurs courantes en Vibe Coding et méthodes de dépannage          | ✅     |
+| [Annexe E : Comparaison de 7 Outils de Programmation AI](docs/zh-cn/stage-1/appendix-articles/example0-1/vibe-coding-tools-snake-game-tutorial.md)                                                      | Comparer et tester les principales plateformes de programmation AI | ✅     |
+| [Annexe F : Concevoir des Sites Web avec des Agents de Design et de Programmation](docs/zh-cn/stage-1/appendix-articles/example0-2/vibe-coding-tools-build-website-with-ai-coding-and-design-agents.md) | Apprendre à utiliser les agents AI de manière collaborative        | ✅     |
 
 ### 2. Ingénieur de Développement Niveau Débutant-Intermédiaire
 

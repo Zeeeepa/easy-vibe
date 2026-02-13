@@ -53,8 +53,7 @@
 
 本教學專門設計，從0到1，帶你逐步掌握 Vibe Coding 技巧：
 
-- **第零階段**：從**小遊戲快速入門** 上手 vibe coding 技能
-- **第一階段**：產品經理視角下的 **vibe coding 技能和業務理解**，實現 Web 應用原型
+- **第一階段**：從**小遊戲入門**到**Web 應用原型**，掌握 AI 編程基礎與產品思維
 - **第二階段**：學習**前後端開發與 AI 能力**相關的 vibecoding 技巧，完成完整應用
 - **第三階段**：掌握**多平台複雜應用**的建構方案，走向生產級應用
 
@@ -76,29 +75,33 @@
 
 [AI 能力詞典：常見 AI 核心概念與名詞、場景解釋](../docs/zh-cn/appendix/ai-capability-dictionary.md)
 
-### 零、幼兒園
+### 一、新手入門與產品原型
 
-| 章节                                                                                                | 關鍵內容                               | 狀態 |
-| :-------------------------------------------------------------------------------------------------- | :------------------------------------- | :--- |
-| [前言：學習地圖](../docs/zh-cn/stage-0/0.1-learning-map/index.md)                                   | 整體學習路徑導覽                       | ✅   |
-| [初級一：AI 時代，會說話就會編程](../docs/zh-cn/stage-0/0.2-ai-capabilities-through-games/index.md) | 通過貪吃蛇等案例初步感受 AI 編程的能力 | ✅   |
+| 章节                                                                                                | 關鍵內容                                          | 狀態 |
+| :-------------------------------------------------------------------------------------------------- | :------------------------------------------------ | :--- |
+| [前言：學習地圖](../docs/zh-cn/stage-0/0.1-learning-map/index.md)                                   | 整體學習路徑導覽                                  | ✅   |
+| [初級一：AI 時代，會說話就會編程](../docs/zh-cn/stage-0/0.2-ai-capabilities-through-games/index.md) | 通過貪吃蛇等案例初步感受 AI 編程的能力            | ✅   |
+| [初級二：認識 AI IDE 工具](../docs/zh-cn/stage-1/1.1-introduction-to-ai-ide/index.md)               | 學會使用 IDE，在本地製作小遊戲                    | ✅   |
+| [初級三：動手做出原型](../docs/zh-cn/stage-1/1.2-building-prototype/index.md)                       | 從需求分析、AI 生成單頁面，再到生成多頁面產品原型 | ✅   |
+| [初級四：給原型加上 AI 能力](../docs/zh-cn/stage-1/1.3-integrating-ai-capabilities/index.md)        | 學會接入常見 AI 能力（文本、圖片、影片）          | ✅   |
+| [初級五：完整專案實戰](../docs/zh-cn/stage-1/1.4-complete-project-practice/index.md)                | 模擬真實場景、接受用戶反饋迭代，完整化專案        | ✅   |
+| [大作業：做一個完整的 Web 應用原型並展示](../docs/zh-cn/stage-1/1.5-final-project/index.md)         | 完整實現應用，展示應用效果                        | ✅   |
 
-### 一、AI 產品經理
+#### 附錄：業務思維
 
-| 章节                                                                                         | 關鍵內容                                          | 狀態 |
-| :------------------------------------------------------------------------------------------- | :------------------------------------------------ | :--- |
-| [初級二：認識 AI IDE 工具](../docs/zh-cn/stage-1/1.1-introduction-to-ai-ide/index.md)        | 學會使用 IDE，在本地製作小遊戲                    | ✅   |
-| [初級三：動手做出原型](../docs/zh-cn/stage-1/1.2-building-prototype/index.md)                | 從需求分析、AI 生成單頁面，再到生成多頁面產品原型 | ✅   |
-| [初級四：給原型加上 AI 能力](../docs/zh-cn/stage-1/1.3-integrating-ai-capabilities/index.md) | 學會接入常見 AI 能力（文本、圖片、影片）          | ✅   |
-| [初級五：完整專案實戰](../docs/zh-cn/stage-1/1.4-complete-project-practice/index.md)         | 模擬真實場景、接受用戶反饋迭代，完整化專案        | ✅   |
-| [大作業：做一個完整的 Web 應用原型並展示](../docs/zh-cn/stage-1/1.5-final-project/index.md)  | 完整實現應用，展示應用效果                        | ✅   |
+| 章節                                                                                       | 關鍵內容                                   | 狀態 |
+| :----------------------------------------------------------------------------------------- | :----------------------------------------- | :--- |
+| [附錄A：產品思維與方案設計](../docs/zh-cn/stage-1/appendix-a-product-thinking/index.md)    | 從零到一做產品需要考慮的思維框架           | ✅   |
+| [附錄B：AI 行業應用場景參考 (B端)](../docs/zh-cn/stage-1/appendix-industry-scenarios/index.md) | 了解 AI 在不同產業的應用場景               | ✅   |
+| [附錄C：AI 消費場景靈感參考 (C端)](../docs/zh-cn/stage-1/appendix-c-consumer-scenarios/index.md) | 探索 AI 在消費級產品中的應用場景           | ✅   |
 
-#### 附錄
+#### 附錄：技術方案
 
-| 章节                                                                                 | 關鍵內容                           | 狀態 |
-| :----------------------------------------------------------------------------------- | :--------------------------------- | :--- |
-| [附錄A：產品思維補充](../docs/zh-cn/stage-1/appendix-a-product-thinking/index.md)    | 從零到一做產品需要考慮的思維框架   | ✅   |
-| [附錄B：常見報錯及解決方案](../docs/zh-cn/stage-1/appendix-b-common-errors/index.md) | vibe coding 中的常見錯誤及排查方法 | ✅   |
+| 章節                                                                                                                                                      | 關鍵內容                                   | 狀態 |
+| :-------------------------------------------------------------------------------------------------------------------------------------------------------- | :----------------------------------------- | :--- |
+| [附錄D：寫代碼時遇到錯誤怎麼辦](../docs/zh-cn/stage-1/appendix-b-common-errors/index.md)                                                                  | vibe coding 中的常見錯誤及排查方法         | ✅   |
+| [附錄E：七款 AI 編程工具對比](../docs/zh-cn/stage-1/appendix-articles/example0-1/vibe-coding-tools-snake-game-tutorial.md)                                | 對比測試主流 AI 編程平台                   | ✅   |
+| [附錄F：用設計和編程 Agent 設計網站](../docs/zh-cn/stage-1/appendix-articles/example0-2/vibe-coding-tools-build-website-with-ai-coding-and-design-agents.md) | 學習如何使用 AI 智能體協同工作             | ✅   |
 
 ### 二、初中級開發工程師
 

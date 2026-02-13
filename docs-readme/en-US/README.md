@@ -56,8 +56,7 @@ When you try to write code with AI, encounter constant errors, often want to giv
 
 This tutorial is specifically designed to take you from 0 to 1, progressively mastering Vibe Coding techniques:
 
-- **Stage 0**: Get started with **vibe coding skills through simple games**
-- **Stage 1**: **Vibe coding skills and business understanding** from a product manager perspective, implementing web application prototypes
+- **Stage 1**: From **Games to Web Prototypes**, mastering AI programming basics and product thinking (Novice & PM)
 - **Stage 2**: Learn **frontend/backend development and AI capabilities** related vibe coding techniques, complete full applications
 - **Stage 3**: Master **multi-platform complex application** construction solutions, moving towards production-grade applications
 
@@ -79,29 +78,33 @@ We believe that by mastering Vibe Coding combined with systematic training, one 
 
 [AI Capability Dictionary: Common AI Core Concepts, Terminology, and Scenario Explanations](docs/zh-cn/appendix/ai-capability-dictionary.md)
 
-### Stage 0: Kindergarten
+### Stage 1: Novice & PM - From Games to Web Prototypes
 
-| Chapter                                                                                                           | Key Content                                                          | Status |
-| :---------------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------- | :----- |
-| [Preface: Learning Map](docs/zh-cn/stage-0/0.1-learning-map/index.md)                                             | Overall learning path overview                                       | ✅     |
-| [Primary 1: Programming by Speaking in the AI Era](docs/zh-cn/stage-0/0.2-ai-capabilities-through-games/index.md) | Experience AI programming capabilities through Snake and other cases | ✅     |
+| Chapter                                                                                         | Key Content                                                                         | Status |
+| :---------------------------------------------------------------------------------------------- | :---------------------------------------------------------------------------------- | :----- |
+| [Preface: Learning Map](docs/en-us/stage-0/)                                                    | Overall learning path overview                                                      | 🚧     |
+| [Primary 1: Programming by Speaking in the AI Era](docs/en-us/stage-0/)                         | Experience AI programming capabilities through Snake and other cases                | 🚧     |
+| [Primary 2: Understanding AI IDE Tools](docs/en-us/stage-0/)                                    | Learn to use IDE, create small games locally                                        | 🚧     |
+| [Primary 3: Building Prototypes Hands-On](docs/en-us/stage-0/)                                  | From requirement analysis, AI-generated single page to multi-page product prototype | 🚧     |
+| [Primary 4: Adding AI Capabilities to Prototypes](docs/en-us/stage-0/)                          | Learn to integrate common AI capabilities (text, image, video)                      | 🚧     |
+| [Primary 5: Complete Project Practice](docs/en-us/stage-0/)                                     | Simulate real scenarios, accept user feedback iterations, complete projects         | 🚧     |
+| [Final Assignment: Build a Complete Web Application Prototype and Present](docs/en-us/stage-0/) | Fully implement application, showcase application effects                           | 🚧     |
 
-### Stage 1: AI Product Manager
+#### Appendix: Business Thinking
 
-| Chapter                                                                                                                   | Key Content                                                                         | Status |
-| :------------------------------------------------------------------------------------------------------------------------ | :---------------------------------------------------------------------------------- | :----- |
-| [Primary 2: Understanding AI IDE Tools](docs/zh-cn/stage-1/1.1-introduction-to-ai-ide/index.md)                           | Learn to use IDE, create small games locally                                        | ✅     |
-| [Primary 3: Building Prototypes Hands-On](docs/zh-cn/stage-1/1.2-building-prototype/index.md)                             | From requirement analysis, AI-generated single page to multi-page product prototype | ✅     |
-| [Primary 4: Adding AI Capabilities to Prototypes](docs/zh-cn/stage-1/1.3-integrating-ai-capabilities/index.md)            | Learn to integrate common AI capabilities (text, image, video)                      | ✅     |
-| [Primary 5: Complete Project Practice](docs/zh-cn/stage-1/1.4-complete-project-practice/index.md)                         | Simulate real scenarios, accept user feedback iterations, complete projects         | ✅     |
-| [Final Assignment: Build a Complete Web Application Prototype and Present](docs/zh-cn/stage-1/1.5-final-project/index.md) | Fully implement application, showcase application effects                           | ✅     |
+| Chapter                                                                                                 | Key Content                                              | Status |
+| :------------------------------------------------------------------------------------------------------ | :------------------------------------------------------- | :----- |
+| [Appendix A: Product Thinking and Solution Design](docs/en-us/stage-1/appendix-a-product-thinking/)     | Thinking framework needed to build products from scratch | 🚧     |
+| [Appendix B: AI Industry Application Scenarios (B2B)](docs/en-us/stage-1/appendix-industry-scenarios/)  | Understand AI applications in different industries       | 🚧     |
+| [Appendix C: AI Consumer Scenario Inspiration (B2C)](docs/en-us/stage-1/appendix-c-consumer-scenarios/) | Explore AI applications in consumer products             | 🚧     |
 
-#### Appendix
+#### Appendix: Technical Solutions
 
-| Chapter                                                                                            | Key Content                                              | Status |
-| :------------------------------------------------------------------------------------------------- | :------------------------------------------------------- | :----- |
-| [Appendix A: Product Thinking Supplement](docs/zh-cn/stage-1/appendix-a-product-thinking/index.md) | Thinking framework needed to build products from scratch | ✅     |
-| [Appendix B: Common Errors and Solutions](docs/zh-cn/stage-1/appendix-b-common-errors/index.md)    | Common errors in vibe coding and troubleshooting methods | ✅     |
+| Chapter                                                                                                                                                                                  | Key Content                                              | Status |
+| :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :------------------------------------------------------- | :----- |
+| [Appendix D: What to Do When Encountering Errors](docs/en-us/stage-1/appendix-b-common-errors/)                                                                                          | Common errors in vibe coding and troubleshooting methods | 🚧     |
+| [Appendix E: Comparison of Seven AI Programming Tools](docs/en-us/stage-1/appendix-articles/example0-1/vibe-coding-tools-snake-game-tutorial.md)                                         | Compare and test mainstream AI programming platforms     | 🚧     |
+| [Appendix F: Designing Websites with Design and Programming Agents](docs/en-us/stage-1/appendix-articles/example0-2/vibe-coding-tools-build-website-with-ai-coding-and-design-agents.md) | Learn how to use AI agents collaboratively               | 🚧     |
 
 ### Stage 2: Intermediate Developer
 

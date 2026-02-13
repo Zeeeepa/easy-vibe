@@ -77,6 +77,10 @@
   border-top: 0 !important;
 }
 
+.vp-doc h2 .header-anchor {
+  top: 10px !important;
+}
+
 .vp-doc :where(h3) {
   margin: 18px 0 8px;
 }
@@ -168,6 +172,13 @@
 :where(html) .VPSidebarItem .item,
 :where(html) .VPSidebarItem[data-v-d81de50c] .item {
   margin-bottom: 0 !important;
+}
+
+/* 图片默认居中显示 */
+.vp-doc img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* 图片高度限制策略：根据长宽比调整最大高度 */
@@ -270,7 +281,10 @@
 
 /* System Font Stack */
 :root {
-  --vp-font-family-base: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  --vp-font-family-base:
+    -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Segoe UI', Roboto,
+    Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+    'Segoe UI Symbol';
 }
 
 /* Glassmorphism Utilities */
@@ -304,7 +318,9 @@
   border-radius: 20px;
   background-image: linear-gradient(to right, #42d392, #647eff);
   border: none;
-  transition: transform 0.2s, opacity 0.2s;
+  transition:
+    transform 0.2s,
+    opacity 0.2s;
 }
 
 .VPHomeHero .action .VPButton.brand:hover {
@@ -339,4 +355,53 @@
   padding-top: var(--vp-nav-height, 64px) !important;
   padding-bottom: 18vh !important;
   box-sizing: border-box;
+}
+
+/* ============================================
+   Outline 侧边栏指示标滚动修复
+   问题：当页面内容很长时，outline 中的指示标(marker)
+   会移动到可见区域之外，用户看不到当前阅读位置
+   ============================================ */
+
+/* 让 outline 容器可以独立滚动 */
+.VPDocAsideOutline {
+  max-height: calc(100vh - var(--vp-nav-height, 64px) - 32px);
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+/* 隐藏滚动条但保持滚动功能 */
+.VPDocAsideOutline::-webkit-scrollbar {
+  width: 4px;
+}
+
+.VPDocAsideOutline::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.VPDocAsideOutline::-webkit-scrollbar-thumb {
+  background: var(--vp-c-divider);
+  border-radius: 2px;
+}
+
+.VPDocAsideOutline::-webkit-scrollbar-thumb:hover {
+  background: var(--vp-c-text-3);
+}
+
+/* Firefox 滚动条样式 */
+.VPDocAsideOutline {
+  scrollbar-width: thin;
+  scrollbar-color: var(--vp-c-divider) transparent;
+}
+
+/* 确保 outline 内容区域正确显示 */
+.VPDocAsideOutline .content {
+  position: relative;
+  min-height: min-content;
+}
+
+/* 确保 marker 指示标始终在可见区域内 */
+.VPDocAsideOutline.has-outline .outline-marker {
+  position: absolute;
+  will-change: top;
 }
